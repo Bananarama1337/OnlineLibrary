@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 62.5%;
+    color: black;
+    font-family: 'Bitter', serif;
+}
+
+p, label, input, button, b{
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 2;
+}
+
+#main{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+input{
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    background-color: #e2e8f0;
+    margin-top: 0.5rem;
+}
+
+input:focus{
+    border: 2px solid #94a3b8;
+    outline: none;
+}
+
+input[type='radio']{
+    margin: 1rem;
+}
+
+button[id='submit_btn']{
+    width: 10rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+button.deleteBtn{
+    width: 12rem;
+    height: 5rem;
+    font-weight: 2.5rem;
+}
+
+button{
+    border: none;
+    background-color: #94a3b8;
+    border-radius: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* Область карточек с книгами */
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem 5rem;
+    margin: 1.5rem 0;
+    border-top: 3px solid #334155;
+    text-align: center;
+    justify-content: center;
+}
+
+.book_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #334155;
+    width: max-content;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    line-height: 1.5;
+    transition: 0.4s ease;
+    box-shadow: 1px 2px 6px 1px gray;
+}
+
+.book_wrap:hover{
+    transform: translateY(-1rem);
+}
+
+.book_wrap > p{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.fas{
+    font-size: 3rem;
+}
+
+.fas:hover{
+    cursor: pointer;
+}
+
+.fa-times{
+    color: red;
+}
+
+.fa-check{
+    color: green;
+}

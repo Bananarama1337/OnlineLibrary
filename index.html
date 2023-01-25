@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e233d6f6af.js" crossorigin="anonymous"></script>
+    <script src="first.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <main id="main">
+        <p class="input-label">*Name of the book</p>
+        <input type="text" name="book_name" id="book_name" maxlength="40" placeholder="Harry Potter">
+        <p class="input-label">*Author</p>
+        <input type="text" name="book_author" id="book_author" maxlength="40" placeholder="J.Rowling">
+        <p class="input-label">*Pages</p>
+        <input type="number" name="book_pages" id="book_pages" max="4000" placeholder="340">
+        <p class="input-label"><b>Have you read this book yet?</b></p>
+        <div id="radio_btns">
+            <input type="radio" name="read_state" id="not_read" value="not read" checked>
+            <label for="not_read">Not read yet</label>
+            <input type="radio" name="read_state" id="read" value="read">
+            <label for="read">Read</label>
+        </div>
+        <button id="submit_btn">Submit</button>
+        <h1>Your books</h1>
+    </main>
+    <div id="container"></div>
+</body>
+</html>
