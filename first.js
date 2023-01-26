@@ -6,16 +6,13 @@ const nameInput = document.querySelector('#book_name');
 const authorInput = document.querySelector('#book_author');
 const pagesInput = document.querySelector('#book_pages');
 
-/* Конструктор книги */
-function Book(){
-    this.name = nameInput.value;
-    this.author = authorInput.value;
-    this.pages = pagesInput.value;
-    this.read = document.querySelector('input[name="read_state"]:checked').value;
-};
-
-Book.prototype.toString = function(){
-    return this.name + ' by ' + this.author + ', ' + this.pages + ', ' + this.read;
+class Book{
+    constructor(){
+        this.name = nameInput.value;
+        this.author = authorInput.value;
+        this.pages = pagesInput.value;
+        this.read = document.querySelector('input[name="read_state"]:checked').value;
+    }
 }
 
 function addBookLibrary(){
